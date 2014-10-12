@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hello world</title>
+</head>
+<body>
+
+
+<script type="text/javascript" src="webchef.min.js"></script>
+<script type="text/potato" id="mytemplate">
+		<div id="sda">
+			<h1 class ="<%theclass%>"><%data%></h1>
+		</div>
+	</script>
+<script type="text/javascript">
+	var templateData = document.querySelector('#mytemplate').innerHTML;
+	var template = webChef.makeRecipe(templateData);
+	var dataFromSource = {
+						data:'lorem ipsum',
+						theclass:'nice'
+						}
+	document.body.innerHTML=template(dataFromSource);
+</script>
+</body>
+</html>
