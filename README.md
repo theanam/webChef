@@ -1,21 +1,21 @@
-#webChef: Minimal erb/ejs style tiny templating snippet (Library!)
+# webChef: Minimal erb/ejs style tiny templating snippet (Library!)
 
 Yet another erb / ejs inspired templating engine? not actually. This plugin / code is actually a lot simpler (just 16 lines) . UnderscoreJS has almost the same feature. that one is even better, use mine if you want to include something even smaller, or you just like me for no reason.
 
-###What it does?
+### What it does?
 
 * Use erb style syntax <%something%>
 * Helps you seperate logic and view (by seperate I mean completely seperate)
 * Renders template with a given data
 
 
-###What it doesn't
+### What it doesn't
 
 * use any loop / condition, expressions or filters in itself (like other fancy templating languages. if you need some, feel free to use handlebars,mustache or any other tools instead)
 * leave you with a lot of code
 * disturb your cat
 
-###Usage
+### Usage
 
 webChef creates an object named `webChef` which has two functions : `cook` and `makeRecipe` . The first one, `cook` takes two arguments, template [String] and data [object] and returns the compiled template. Example :
 
@@ -61,7 +61,7 @@ webChef is simple I just love it!
 JavaScript is awesome I just wanna hug it!
 ```
 
-###A more practical example, using the template as a part of the document.
+### A more practical example, using the template as a part of the document.
 
 create a `script` tag with `type` anything other than `text/javascript` (or the browser will try to interprete it) , in this example, I'll be using `text/potato` and give it an id.
 
